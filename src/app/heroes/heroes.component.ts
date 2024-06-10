@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule here for sta
 import { CommonModule } from '@angular/common';
 import { Hero } from '../hero';
 import { HEROES } from '../mock-heroes';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-heroes',
