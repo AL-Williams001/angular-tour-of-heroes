@@ -3,12 +3,13 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule here for sta
 import { CommonModule } from '@angular/common';
 import { Hero } from '../hero';
 import { HEROES } from '../mock-heroes';
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor } from '@angular/common';
+import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 
 @Component({
   selector: 'app-heroes',
   standalone: true,
-  imports: [CommonModule, FormsModule, NgFor], // Add FormsModule here for standalone components
+  imports: [CommonModule, FormsModule, NgFor, HeroDetailComponent], // Add FormsModule here for standalone components
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
 })
