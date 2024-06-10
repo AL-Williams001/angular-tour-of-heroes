@@ -2,17 +2,16 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // Import FormsModule here for standalone components
 import { CommonModule } from '@angular/common';
 import { Hero } from '../hero';
+import { HEROES } from '../mock-heroes';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-heroes',
   standalone: true,
-  imports: [CommonModule, FormsModule], // Add FormsModule here for standalone components
+  imports: [CommonModule, FormsModule, NgFor], // Add FormsModule here for standalone components
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
 })
 export class HeroesComponent {
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm',
-  };
+  heroes = HEROES;
 }
