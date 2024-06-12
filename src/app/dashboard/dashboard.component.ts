@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'; // Import RouterModule here
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
-import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
-  standalone: true,
-  imports: [CommonModule, NgFor],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
+  standalone: true,
+  imports: [CommonModule, RouterModule], // Add RouterModule here
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];

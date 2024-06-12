@@ -7,7 +7,7 @@ import { MessageService } from '../message.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.css'],
+  styleUrls: ['./messages.component.css'], // corrected styleUrls instead of styleUrl
 })
 export class MessagesComponent {
   constructor(public messageService: MessageService) {}
